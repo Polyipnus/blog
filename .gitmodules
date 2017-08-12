@@ -1,0 +1,3 @@
+[submodule "hexo-theme-yilia"]
+	path = hexo-theme-yilia
+	url = git@github.com:Polyipnus/hexo-theme-yilia.git
