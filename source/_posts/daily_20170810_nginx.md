@@ -1,16 +1,18 @@
 ---
-title: Nginx使用说明
-date: 2017-08-10 11:18:54
+title: Nginx 高级配置
+date:  2017-08-10 11:18:54
 tags:
+       - 工具学习
 ---
 
-## 反向代理（reverse proxy）
-
+> 反向代理(reverse proxy)
+> 
 > 终结客户端连接，并且生成另一个新的连接，新的连接代表客户端向上游服务器（upstream server）生成连接。
 
-- proxy_pass指令
 
-参数说明
+## proxy_pass 指令
+
+> 参数说明
 
     # 没有必要重写Location头, 将proxy_redirect指令设置为off;
     proxy_redirect off;
@@ -24,7 +26,7 @@ tags:
     proxy_set_header Host $host;
     proxy_set_header X-Real-IP $remote_addr;
     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-    
+<!-- more -->
     # client_max_body_size指令不是严格的代理模块指令，但与代理相关
     # 如果这个值设置太低，将不能上传文件到上流服务器上，在设置需要注意
     # 通过web窗口上传的文件大小通常要大于它在文件系统中的大小
@@ -52,7 +54,8 @@ tags:
     # 控制worker进程阻塞后台数据的显示器。值越大，处理阻塞的时间越长
     proxy_temp_file_write_size 64k;
 
-例子
+
+> 举个粟子
 
     server {
     
@@ -63,6 +66,7 @@ tags:
         }
     
         location / {
+            # Include 配置文件
             include proxy.conf;
     
             # 覆盖原有值
@@ -74,5 +78,12 @@ tags:
     }
     
     
-- upstream 模块
+## upstream 模块
 
+> 待更新
+
+## 参考引用
+>    
+1. [官方主页](http://supervisord.org/index.html)
+2. [源码GitHub](https://github.com/Supervisor/supervisor)
+<p><img src="/assets/tool/daily_nginx_01.jpg" alt="" width="400" height="80"></p>

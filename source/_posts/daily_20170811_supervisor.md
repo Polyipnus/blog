@@ -1,19 +1,28 @@
 ---
-title: supervisor使用教程
-date: 2017-08-10 11:10:14
-tags:
+title: supervisor 快速进阶
+date:  2017-08-10 11:10:14
+tags:  
+       - 工具学习
 ---
-## supervisor 进程使用说明
 
-1. 什么是supervisor
+> supervisor是python实现的进程管理工具，能将命令行进程变为后台daemon。管理进程的启动，重启，关闭。
+> 
+> 有兴趣的话可以看下[官方详细介绍](http://supervisord.org/index.html)。
 
-        supervisor是用python写的一个进程管理工具，用来启动，重启，关闭进程。
 
-2. supervisor配置文件
+## 安装说明
+
+    1. Debian/Ubuntu可以直接通过apt-get安装:
         
-        echo_supervisord_conf > /etc/supervisord.conf
+       apt-get install supervisor
 
-3. 配置说明
+    2. supervisor配置文件
+
+       echo_supervisord_conf > /etc/supervisord.conf
+
+<!-- more -->
+
+## 配置说明
 
    下面是配置内容说明
 
@@ -125,5 +134,8 @@ tags:
         ;username=user ; 登录管理后台的用户名
         ;password=123 ; 登录管理后台的密码
 
+## 参考引用
 
-[使用说明](http://supervisord.org/index.html)
+>    
+1. [官方主页](http://supervisord.org/index.html)
+2. [源码GitHub](https://github.com/Supervisor/supervisor)

@@ -3,16 +3,16 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-author: John Doe
+title: Shaoshuai's Blog
+subtitle: Nothing is true, everying is permitted.
+description: 
+author: Shaoshuai  
 language:
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: https://polyipnus.github.io
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -81,7 +81,7 @@ theme: yilia
 deploy:
   type: git
 
-  repo: https://github.com/polyipnus/polyipnus.github.io.git
+  repo: git@github.com:Polyipnus/polyipnus.github.io.git
 
   branch: master
 
