@@ -91,11 +91,13 @@ sitemap:
 baidusitemap:
     path: baidusitemap.xm
 
+# 设置阅订
 feed:
-    type: atom
-    path: atom.xml
-    limit: 100
+	type: atom 		# type 表示类型,是atom还是rss2.
+	path: atom.xml  # path 表示Feed路径
+	limit: 100      # limit 最多多少篇最近文章
 
+# 文章目录
 jsonContent:
   meta: false
   pages: false

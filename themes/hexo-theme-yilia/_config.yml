@@ -10,8 +10,10 @@ menu:
 subnav:
     github:   "https://github.com/Polyipnus"
     facebook: "https://www.facebook.com/shaoshuai.stu"
-    # weibo:    "http://weibo.com/u/1650279590"
-    mail:     "shaoshuai.staurt@gmail.com"
+    mail:     "shaoshuai.stuart@gmail.com"
+    linkedin: "http://www.linkedin.com/in/shaoshuai-stuart-77648780"
+    rss: /atom.xml
+  # weibo:    "http://weibo.com/u/1650279590"
   #qq: "#"
   #weixin: "#"
   #jianshu: "#"
@@ -21,7 +23,6 @@ subnav:
   #acfun: "#"
   #google: "#"
   #twitter: "#"
-  #linkedin: "#"
 
 rss: /atom.xml
 
@@ -34,28 +35,38 @@ root:
 
 # 文章太长，截断按钮文字
 excerpt_link: more
+
 # 文章卡片右下角常驻链接，不需要请设置为false
-show_all_link: '展开全文'
+show_all_link: '阅览全文'
+
 # 数学公式
 mathjax: false
+
 # 是否在新窗口打开链接
 open_in_new: false
 
 # 打赏
 # 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
-reward_type: 2
+reward_type: 1
+
 # 打赏wording
-reward_wording: '谢谢你请我吃糖果'
+reward_wording: '谢谢大人的赏赐~_~'
+
 # 支付宝二维码图片地址，跟你设置头像的方式一样。比如：/assets/img/alipay.jpg
 alipay: 
+
 # 微信二维码图片地址
 weixin: 
 
-# 目录
-# 目录设定：0-不显示目录； 1-文章对应的md文件里有toc:true属性，才有目录； 2-所有文章均显示目录
+# 目录设定:
+#   0-不显示目录;
+#   1-文章对应的md文件里有toc:true属性，才有目录;
+#   2-所有文章均显示目录
 toc: 1
+
 # 根据自己的习惯来设置，如果你的目录标题习惯有标号，置为true即可隐藏hexo重复的序号；否则置为false
 toc_hide_index: true
+
 # 目录为空时的提示
 toc_empty_wording: '目录，不存在的…'
 
@@ -69,7 +80,7 @@ favicon: /favicon.png
 
 #你的头像url
 avatar: /assets/img/Lufee.jpg
-#
+
 #是否开启分享
 share_jia: true
 
@@ -104,19 +115,31 @@ slider:
 # 智能菜单
 # 如不需要，将该对应项置为false
 # 比如
-#smart_menu:
-#  friends: false
+# smart_menu:
+# friends: false
+# smart_menu:
+#   innerArchive: '所有文章'
+#   friends: '友链'
+#   aboutme: 'AM'
+# friends:
+#   友情链接2: http://localhost:4000/
+#   友情链接3: http://localhost:4000/
+#   友情链接4: http://localhost:4000/
+#   友情链接5: http://localhost:4000/
+#   友情链接6: http://localhost:4000/
+
 smart_menu:
   innerArchive: '所有文章'
   friends: '友链'
-  aboutme: '关于我'
+  aboutme: 'AM'
 
 friends:
-  友情链接1: http://localhost:4000/
-  友情链接2: http://localhost:4000/
-  友情链接3: http://localhost:4000/
-  友情链接4: http://localhost:4000/
-  友情链接5: http://localhost:4000/
-  友情链接6: http://localhost:4000/
+  博客园Renaissance: http://www.cnblogs.com/renaissance/
 
-aboutme: 很惭愧<br><br>只做了一点微小的工作<br>谢谢大家
+aboutme:
+    <br>程序小白, 猪场卖身</br>
+    <br>木呐小生, 伴影独行</br>
+    <br>志不存高, 知足不殆</br>
+
+# 个人添加功能
+# 1. 网站流量统计
