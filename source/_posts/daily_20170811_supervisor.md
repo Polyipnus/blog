@@ -60,7 +60,7 @@ tags:
         files = relative/directory/*.ini        ; 可以是 *.conf 或 *.ini
 
 
-# 3. 进程使用例子
+## 3. 进程使用例子
 
     使用例子说明
 
@@ -98,7 +98,7 @@ tags:
         files = relative/directory/*.ini        ; 可以是 *.conf 或 *.ini
 
 
-# 4. 配置引用
+## 4. 配置引用
 
 将进程配置添加到supervisord.conf文件中, 推荐将各个进程配置放到单独的文件中，然后通过[include]配置项引用
 
@@ -106,12 +106,12 @@ tags:
     [include]
     files = /etc/supervisor/*.conf
 
-# 5. 服务启动
+## 5. 服务启动
 
     
     supervisord -c /etc/supervisord.conf 
 
-# 6. 服务客户端管理
+## 6. 服务客户端管理
 
 可以使用supervisord的命令行客户端管理工具supervisorctl，来管理进程。
 
@@ -123,7 +123,7 @@ tags:
     $ supervisorctl reread
     $ supervisorctl update
 
-# 7. supervisor web管理界面
+## 7. supervisor web管理界面
 
 在浏览器中输入`http://127.0.0.1:9001`，可进入web管理界面
 
