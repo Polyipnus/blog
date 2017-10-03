@@ -47,7 +47,7 @@ open_in_new: false
 
 # 打赏
 # 打赏type设定：0-关闭打赏； 1-文章对应的md文件里有reward:true属性，才有打赏； 2-所有文章均有打赏
-reward_type: 2
+reward_type: 0
 
 # 打赏wording
 reward_wording: '谢谢大人的赏赐~_~'

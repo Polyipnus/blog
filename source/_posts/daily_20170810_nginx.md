@@ -76,14 +76,14 @@ tags:
             proxy_pass http://localhost:8080;
         }
     }
-    
-    
+
+
 ## upstream 模块
 
 > 待更新
 
 ## 参考引用
->    
+>
 1. [官方主页](http://supervisord.org/index.html)
 2. [源码GitHub](https://github.com/Supervisor/supervisor)
 <p><img src="/assets/tool/daily_nginx_01.jpg" alt="" width="400" height="80"></p>
